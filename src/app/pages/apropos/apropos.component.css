@@ -1,0 +1,141 @@
+
+/* From uiverse.io by @Codewithvinay */
+.box2 {
+    position: absolute;
+    width: 150vh;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    z-index: 1;
+    transform: skewX(0deg);
+   }
+   .box2:nth-child(1){
+    left: 50%;
+    top: 0;
+    margin-left: 12vh;  
+   }
+   .box2:nth-child(2){
+    left: 75%;
+    bottom: 7%; 
+    margin-left: -40vh;   
+   }
+   
+   .box2::before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: 50%;
+    height: 100%;
+    text-decoration: none;
+    background: #fff;
+    border-radius: 8px;
+    transition: 0.5s;
+   }
+   
+   .box2::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    border-radius: 8px;
+    transform: skewX(0deg);
+    transition: 0.5s;
+    filter: blur(50px);
+   }
+   
+   .box2:hover:before,
+   .box2:hover:after {
+    transform: skewX(0deg) scaleX(1.01);
+   }
+  
+   
+   .box2:nth-child(1):before,
+   .box2:nth-child(1):after {
+    background: linear-gradient(360deg,  rgb(226, 116, 52),rgb(228, 217, 204))
+   }
+
+   .box2:nth-child(2):before,
+   .box2:nth-child(2):after {
+    background: linear-gradient(360deg,  rgb(69, 128, 177),rgb(199, 215, 228))
+   }
+   
+  
+   
+   .box2 .content {
+    position: relative;
+    width: 75vh;
+    height: 40vh;
+    padding: 20px 40px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 1;
+    transform: 0.5s;
+    color: whitesmoke;
+    transition: 0.5s;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0vh;
+    margin-top: 5vh;
+   }
+
+   .box2:nth-child(2) .content{
+    width: 75vh;
+    
+   }
+   .box2 .content h1 {
+    font-size: 5vh;
+    color: rgb(204, 118, 68);
+    text-shadow: 1px 1px 1px black;
+   }
+   .box2:nth-child(2) .content h1 {
+    font-size: 5vh;
+    color: rgb(57, 107, 173);
+    text-shadow: 1px 1px 1px black;
+   }
+   .box2 .content p{
+    font-size: 2.6vh;
+    color:  rgb(23, 31, 41);
+    text-align: justify;
+   }
+
+   .circleimg1 {
+    width: 30vh;
+    height: 30vh;
+    background: url("/assets/img/logo.png") ;
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+    animation: move-up5 3s ease-in infinite alternate-reverse;
+    top: 10%;
+    left: 5%;
+  }
+  .circleimg2 {
+    width: 30vh;
+    height: 30vh;
+    background: url("/assets/img/logo.png") ;
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+    animation: move-up5 3s ease-in infinite alternate-reverse;
+    bottom: 10%;
+    left: 80%;
+  }
+  .video{
+    margin-top: 4%;
+    margin-left: 2%;
+    height: 75vh;
+    width: 50%;
+    box-shadow: rgba(0, 0, 0, 0.2) 7px 7px 5px;
+    border-radius: 4%;
+  }
+
+
+
+

@@ -1,0 +1,54 @@
+.circle2 {
+    width: 60vh;
+    height: 60vh;
+    background: rgb(57, 107, 173);
+    border-radius: 50%;
+    position: absolute;
+    animation: move-up5 2.5s ease-in infinite alternate-reverse;
+  }
+  .circle2:nth-child(1) {
+    width: 50vh;
+    height: 50vh;
+    bottom: -25%;
+    left: -10%;
+    background-color: rgb(226, 116, 52);
+    animation: move-up6 2.5s ease-in infinite alternate-reverse;
+  
+  }
+  .circle2:nth-child(2) {
+    width: 50vh;
+    height: 50vh;
+    bottom: 8%;
+    left: 72%;
+  }
+  .circle2:nth-child(3) {
+    width: 50vh;
+    height: 50vh;
+    bottom: 35%;
+    left: 62%;
+  }
+@media(max-width:1500px){
+.circle2,.circleimg{
+    transform: scale(0.9);
+    animation: none;
+
+}
+
+}
+@media(max-width:1400px){
+    .circle2,.circleimg{
+        transform: scale(0.8);
+    
+        
+    }
+    
+    
+}
+    @media(max-width:1300px){
+        .circle2,.circleimg{
+            transform: scale(0.7);
+        
+            
+        }
+        
+    }
