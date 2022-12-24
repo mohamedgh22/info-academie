@@ -8,9 +8,22 @@ import{TranslateService} from '@ngx-translate/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(){}
+  constructor(public translate: TranslateService){}
 
   ngOnInit(): void {
+  }
+ /* changeLang() {
+    console.warn(lang);
+    this.translate.setDefaultLang(lang);
+
+    this.translate.use(lang);
+  }*/
+
+  changeLang(lang: string) {
+    console.warn(lang);
+    this.translate.setDefaultLang(lang);
+
+    this.translate.use(lang);
   }
 
 }

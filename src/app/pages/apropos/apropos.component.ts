@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-apropos',
@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./apropos.component.css']
 })
 export class AproposComponent implements OnInit {
-
+  isCardVisible: boolean = false;
   constructor() { }
 
   ngOnInit(): void {
+
+  }
+  addAnimationClass() {
+    // add animation class to Div
+    this.isCardVisible = true;
   }
 
 }

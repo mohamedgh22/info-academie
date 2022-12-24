@@ -1,70 +1,72 @@
-<div class="card">
+<div class="card" id="offrep">
+
     <div class="circle3"></div>
     <div class="circle3"></div>
+    <h1 class="titles" (appear)="addAnimationClass()">{{'Offre' | translate}}</h1>
     <div class="cards">
-        <div class="card4">
+        <div class="card4" id="c1" [ngClass]="{'animation-to-right': isCardVisible}">
             <div class="card-img"></div>
             <div class="card-info2">
-              <p class="text-title">COURS DE SOUTIEN:<br> <span>(6ans a 12 ans)</span></p>
+              <p class="text-title">{{"COURS DE SOUTIEN" | translate}}<br> <span>({{"ans"|translate}})</span></p>
               <div class="text-body2">
                   <ul>
-                      <li>2 heures par scènes dans toutes les matières.</li>
-                      <li>les jours des scènes : lundi, mardi jeudi et vendredi .</li>
-                      <li>Prix : 200DH</li>
+                      <li>{{"offre1l1"|translate}}</li>
+                      <li>{{"offre1l2"|translate}}</li>
+                      <li>{{"offre1l3"|translate}}</li>
                   </ul>
-                  
+
                   <button class="cta" data-bs-toggle="modal" data-bs-target="#coursoutpopup">
-                      <span>Voir plus</span>
+                      <span>{{"plus"|translate}}</span>
                       <svg viewBox="0 0 13 10" height="10px" width="15px">
                         <path d="M1,5 L11,5"></path>
                         <polyline points="8 1 12 5 8 9"></polyline>
                       </svg>
                     </button>
               </div>
-  
+
             </div>
             </div>
-            <div class="card4">
+            <div class="card4"  id="c2" [ngClass]="{'animation-to-up': isCardVisible}">
                 <div class="card-img"></div>
                   <div class="card-info2">
-                    <p class="text-title">COURS DES LANGUES:<br> <span>(Anglais,Français)</span></p>
+                    <p class="text-title">{{"courlh"|translate}}<br> <span>({{"anfr"|translate}})</span></p>
                     <div class="text-body2">
                         <ul>
-                          <li>centre info ACADEMIE academie offre des cours linguistique</li>
-                            <li>1 heure par scènes.</li>
-                            <li>Prix : entre(199DH et 299DH)</li>
+                          <li>{{"offre2l1"|translate}}</li>
+                            <li>{{"offre2l2"|translate}}</li>
+                            <li>{{"offre2l3"|translate}}</li>
                         </ul>
-                        
+
                         <button class="cta" data-bs-toggle="modal" data-bs-target="#languepopup">
-                            <span>Voir plus</span>
+                            <span>{{"plus"|translate}}</span>
                             <svg viewBox="0 0 13 10" height="10px" width="15px">
                               <path d="M1,5 L11,5"></path>
                               <polyline points="8 1 12 5 8 9"></polyline>
                             </svg>
                           </button>
                     </div>
-        
+
                   </div>
                 </div>
-                <div class="card4">
+                <div class="card4"  id="c3" [ngClass]="{'animation-to-left': isCardVisible}">
                     <div class="card-img"></div>
                     <div class="card-info2">
-                      <p class="text-title">Activite de divertissement:<br> <span>(les enfants)</span></p>
+                      <p class="text-title">{{"activh"|translate}}<br> <span>({{"enf"|translate}})</span></p>
                       <div class="text-body2">
                           <ul>
-                              <li>centre info ACADEMIE academie offre des activites pour les enfants </li>
-                              <li>Prix : 300DH</li>
+                              <li>{{"offre3l1"|translate}}</li>
+                              <li>{{"offre3l2"|translate}}</li>
                           </ul>
-                          
+
                           <button class="cta" data-bs-toggle="modal" data-bs-target="#activitepopup">
-                              <span>Voir plus</span>
+                              <span>{{"plus"|translate}}  </span>
                               <svg viewBox="0 0 13 10" height="10px" width="15px">
                                 <path d="M1,5 L11,5"></path>
                                 <polyline points="8 1 12 5 8 9"></polyline>
                               </svg>
                             </button>
                       </div>
-          
+
                     </div>
                     </div></div>
 </div>

@@ -1,68 +1,99 @@
 <header id="header1" class="d-flex flex-wrap justify-content-center py-3 mb-4 ">
-    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none" id="logotext">
+    <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none" id="logotext">
         <img src="../assets/img/logo.png" class="logo" alt="">
-        <span>CENTRE <br> INFO ACADEMIE</span>
+        <span>{{"centre"|translate}}</span>
     </a>
 
+
     <ul class="nav nav-pills">
-      <li class="nav-item"><a href="#" class="nav-link" aria-current="page">Home</a></li>
-      <li class="nav-item"><a href="#Services" class="nav-link">Services</a></li>
-      <li class="nav-item"><a href="#activity" class="nav-link">ACTIVITE</a></li>
-      <li class="nav-item"><a href="#offre" class="nav-link">OFFRE</a></li>
-      <li class="nav-item"><a href="#apropos" class="nav-link"> À PROPOS DE NOUS </a></li>
-      <li class="nav-item"><a href="#contact" class="nav-link">NOS CONTACTS</a></li>
-     
+      <li class="nav-item"><a href="#" class="nav-link" aria-current="page">{{'home' | translate}}</a></li>
+      <li class="nav-item"><a href="#Services" class="nav-link">{{'Services' | translate}}</a></li>
+      <li class="nav-item"><a href="#activity" class="nav-link">{{'Activite' | translate}}</a></li>
+      <li class="nav-item"><a href="#offre" class="nav-link">{{'Offre' | translate}}</a></li>
+      <li class="nav-item"><a href="#apropos" class="nav-link"> {{'À PROPOS DE NOUS' | translate}} </a></li>
+      <li class="nav-item"><a href="#contact" class="nav-link">{{'NOS CONTACTS' | translate}}</a></li>
+
     </ul>
   </header>
   <header id="header2" class="py-3 mb-0 ">
-    <a href="/" class="d-flex  text-decoration-none" id="logotext">
+    <a href="#" class="d-flex  text-decoration-none" id="logotext">
       <img src="../assets/img/logo.png" class="logo" alt="">
-      <span>CENTRE <br> INFO ACADEMIE</span>
+      <span class="textrespologo">{{"centre"|translate}}</span>
   </a>
     <a for="check" class="bar" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
       <input id="check" type="checkbox">
-  
+
       <span class="top"></span>
       <span class="middle"></span>
       <span class="bottom"></span>
     </a>
   </header>
-    
+
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">CENTRE INFO ACADEMIE</h5>
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">{{"centre"|translate}}</h5>
           <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#">{{'home' | translate}}</a>
               <hr>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="#">{{'Services' | translate}}</a>
               <hr>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">ACTIVITE</a>
+                <a class="nav-link" href="#">{{'Activite' | translate}}</a>
                 <hr>
               </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">OFFRE</a>
+              <a class="nav-link" href="#">{{'Offre' | translate}}</a>
               <hr>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">À PROPOS DE NOUS</a>
+              <a class="nav-link" href="#">{{'À PROPOS DE NOUS' | translate}}</a>
               <hr>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">NOS CONTACTS</a>
+              <a class="nav-link" href="#">{{'NOS CONTACTS' | translate}}</a>
               <hr>
             </li>
-           
-            
+
+
         </ul>
-        
+
+        </div>
+
+      </div>
+
+      <button class="langue" data-bs-toggle="modal" title="Translation" data-bs-target="#langue">
+        <img src="/assets/img/translate.svg" alt="">
+
+      </button>
+      <div class="modal fade" id="langue" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">choisire une langue</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="form-check">
+                <input class="form-check-input" id="fr" type="radio" name="inlineRadioOptions" onclick="changelangfr()" data-bs-dismiss="modal" checked (click)="changeLang('fr')" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">Francais</label>
+              </div>
+              <div class="form-check ">
+                <input class="form-check-input" id="ar" type="radio" name="inlineRadioOptions" onclick="changelangar()" data-bs-dismiss="modal" (click)="changeLang('ar')" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">arabe</label>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
         </div>
       </div>
+
 

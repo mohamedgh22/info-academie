@@ -13,8 +13,9 @@ import { PopupComponent } from './supp/popup/popup.component';
 import { ServiceComponent } from './pages/service/service.component';
 import { TranslateModule,TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import {HttpClient} from '@angular/common/http';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
 import { HeaderaComponent } from './pagesa/headera/headera.component';
+import { AppearDirective } from './directives/appear.directive';
 
 export function createTranslateLoader(http: HttpClient){
   return new TranslateHttpLoader(http,'./assets/i18n/','.json')
@@ -31,11 +32,13 @@ export function createTranslateLoader(http: HttpClient){
     AproposComponent,
     PopupComponent,
     ServiceComponent,
-    HeaderaComponent
+    HeaderaComponent,
+    AppearDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     TranslateModule.forRoot({
       defaultLanguage: 'fr',
       loader:{

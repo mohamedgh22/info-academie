@@ -2,13 +2,13 @@
 /*css externe*/
 /* From uiverse.io by @alexmaracinaru */
 .cta {
-  margin-left: 15vh;
+  margin-left: 8vh;
   position: relative;
   padding: 1vh 2vh;
   transition: all 0.2s ease;
   border: none;
   background: none;
-  width: 20vh;
+  width: 30vh;
  }
 
  .cta:before {
@@ -23,16 +23,15 @@
   height: 45px;
   transition: all 0.3s ease;
  }
- 
+
  .cta span {
   position: relative;
   font-family: "Ubuntu", sans-serif;
   font-size: 18px;
   font-weight: 700;
-  letter-spacing: 0.05em;
   color: #234567;
  }
- 
+
  .cta svg {
   position: relative;
   top: 0;
@@ -45,27 +44,27 @@
   transform: translateX(-5px);
   transition: all 0.3s ease;
  }
- 
+
  .cta:hover:before {
   width: 100%;
   background: #6ea2d3;
  }
- 
+
  .cta:hover svg {
   transform: translateX(0);
  }
- 
+
  .cta:active {
   transform: scale(0.95);
  }
 /* From uiverse.io by @alexruix */
 /*Magic card*/
 .card4 {
-  position: absolute; 
+
   width: 40vh;
   height: 60vh;
   left: 10%;
-  top: 15%; 
+  top: 15%;
   background: linear-gradient(to top, #d2ddf5 0%, rgb(57, 107, 173));
   overflow: visible;
   border-radius: 10%;
@@ -74,14 +73,14 @@
   flex-direction: column;
   align-items: center;
  }
- 
+
  .card-info2 {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0 1rem;
  }
- 
+
  .card-img {
   width: 14vh;
   height: 14vh;
@@ -97,19 +96,21 @@
 
  .card4:nth-child(2){
   left: 40%;
-  top: 15%; 
+  top: 15%;
  }
  .card4:nth-child(3){
   left: 70%;
-  top: 15%; 
+  top: 15%;
  }
  .card4:nth-child(2) .card-img {
   background-image: url("assets/img/offre2.PNG");
  }
  .card4:nth-child(3) .card-img{
-  background-image: url("assets/img/offre3.PNG");
+  background-image: url("assets/img/f3.PNG");
+  background-size: 19vh;
+  background-position-x: 50%;
  }
- 
+
  .card-img::before {
   content: "";
   border-radius: inherit;
@@ -119,10 +120,10 @@
   width: 105%;
   height: 105%;
   transform: translate(-50%, -50%);
-  border: 1rem solid rgb(199, 199, 199);
+  border: 1rem solid white;
   transition: all .3s ease-in-out;
  }
- 
+
  /*Text*/
  .text-title {
   text-transform: uppercase;
@@ -136,19 +137,28 @@
   color: #dbdbdb;
   font-size: 2.5vh;
  }
- 
+
  .text-body2 {
   font-size: 2.5vh;
   color:whitesmoke;
   font-weight: 400;
   text-shadow: 1px 1px 2px black;
+
+
+
  }
- 
+ .text-body2 ul li{
+  list-style: none;
+  margin-bottom: 10px;
+  padding-right: 10%;
+
+ }
+
  /*Hover*/
  .card4:hover .card-img::before{
   width: 15.5vh;
   height: 15.5vh;
-  border: 1rem solid rgb(199, 199, 199);
+  border: 1rem solid rgb(255, 255, 255);
  }
  .card4:hover .card-img{
   --size: 15.3vh;
@@ -164,7 +174,7 @@
 .box {
   position: absolute;
   left: 20%;
-  top: 15%;  
+  top: 15%;
   width: 80vh;
   height: 50vh;
   justify-content: center;
@@ -172,9 +182,9 @@
   transition: 0.5s;
   z-index: 1;
   margin-left: 5vh;
-  
+
  }
- 
+
  .box::before {
   content: ' ';
   position: absolute;
@@ -187,7 +197,7 @@
   border-radius: 8px;
   transition: 0.5s;
  }
- 
+
  .box::after {
   content: '';
   position: absolute;
@@ -201,20 +211,20 @@
   transition: 0.5s;
   filter: blur(30px);
  }
- 
+
  .box:before,
  .box:after {
   transform: skewX(0deg) scaleX(2);
  }
 
- 
+
  .box:before,
  .box:after {
   background: linear-gradient(360deg,  rgb(57, 107, 173),rgb(227, 245, 255))
  }
- 
 
- 
+
+
  .box .content {
   position: relative;
   width: 80vh;
@@ -235,9 +245,9 @@
   height: 50vh;
     padding: 5vh;
  }
-    
 
- 
+
+
  .box .content h1 {
   font-size: 5vh;
   color: rgb(57, 107, 173);
@@ -252,7 +262,7 @@
 /* From uiverse.io by @satyamchaudharydev */
 .card2 {
   --bg: #f7f7f8;
-  width: 25vh;
+  width: 45%;
   text-align: center;
   background: var(--bg);
   padding: 1.5em;
@@ -281,14 +291,14 @@
 .souscard2 .card2:nth-child(1){
   --hover-bg: rgb(66, 184, 91);
   --hover-text: rgb(255, 255, 255);
-}  
+}
 .souscard2 .card2:nth-child(2){
   --hover-bg: rgb(230, 57, 66);
   --hover-text: rgb(255, 255, 255);
-}   
+}
 
 .card__body {
-  color: #fff;
+  color: rgb(31, 31, 31);
   line-height: 1.5em;
   font-size: 1.6vh;
 }
@@ -334,16 +344,20 @@
 .card {
   margin-top: 4%;
   width: 100%;
-  height: 92vh;
+  height: auto;
   transition: all 0.2s;
-  background-color: rgb(199, 199, 199) ;
-  border: rgb(199, 199, 199)solid 1px ;
+  z-index: 1;
+  background-color: white ;
+  border: none;
+}
+#offrep{
+  height: auto;
 }
 
 
 .circle {
-  width: 70vh;
-  height: 70vh;
+  width: 50vh;
+  height: 50vh;
   background: rgb(57, 107, 173);
   border-radius: 50%;
   position: absolute;
@@ -375,11 +389,11 @@
 .circle3:nth-child(1) {
   top: 20vh;
   left: 85%;
-  
+
 }
 
 .circle3:nth-child(2) {
-  
+
   top: 20vh;
   right:85%;
   animation: move-down1 2.5s ease-in infinite alternate-reverse;
@@ -387,14 +401,14 @@
 
 
 .circle:nth-child(1) {
-  top: -20vh;
-  left: -20vh;
+  top: -5vh;
+  left: -10vh;
 }
 
 .circle:nth-child(2) {
-  
-  bottom: -20vh;
-  right: -20vh;
+
+  bottom: -10vh;
+  right: -10vh;
   background-color: rgb(226, 116, 52);
   animation-name: move-down1;
 }
@@ -416,7 +430,7 @@
     transform: translateY(5vh);
   }
 }
-/* From uiverse.io by @mrhyddenn 
+/* From uiverse.io by @mrhyddenn
 .loader {
   position: relative;
   left: 25vh;
@@ -444,12 +458,12 @@
 
 @keyframes uiverse723 {
   0%, 100% {
-    clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 
+    clip-path: polygon(0% 45%, 15% 44%, 32% 50%,
      54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
   }
 
   50% {
-    clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 
+    clip-path: polygon(0% 60%, 16% 65%, 34% 66%,
      51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
   }
 }*/
@@ -525,18 +539,18 @@ input[type]:checked ~ span.middle {
     transition-duration: 400ms;
     transition-property: color;
   }
-  
+
   #header1 ul .nav-item a:focus,
   #header1 ul .nav-item a:hover {
     color: #fff;
   }
-  
+
   #header1 ul .nav-item a:focus:after,
   #header1 ul .nav-item a:hover:after {
     width: 100%;
     left: 0%;
   }
-  
+
   #header1 ul .nav-item a:after {
     content: "";
     pointer-events: none;
@@ -554,6 +568,8 @@ input[type]:checked ~ span.middle {
 /*css externe end */
 html, body {
   max-width: 100%;
+  padding: 0;
+  margin: 0;
 
 
 }
@@ -570,21 +586,24 @@ html{
 }
 .pages{
   width: 100%;
-  height: 130vh;
-  margin-top: 10vh;
+  padding-top: 1.5vh;
 
+}
+#home{
+  height: 130vh;
 }
 *{
   scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
 }
 header{
-    background:linear-gradient(to right, rgb(226, 116, 52) 0%, rgb(57, 107, 173));
+    background:linear-gradient(to right, rgb(245, 251, 253) 0%, rgb(57, 107, 173));
     z-index: 999;
     width: 100%;
     height: 10vh;
     position: fixed;
     box-shadow : rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-    
+
 }
 #header2{
   visibility: hidden;
@@ -601,13 +620,17 @@ header{
   font-weight: bold;
 
 }
+.textrespologo{
+  font-size: 2vh;
+  margin-top: 3vh;
+}
 #logotext span{
-  color: rgb(132, 174, 196);
-  text-shadow: 1px 1px 2px rgb(68, 68, 68);
+  color: rgb(47, 131, 155);
 
 }
 .logo{
   height: 9.5vh;
+  border-radius: 50%;
 }
 #header1 ul .nav-item{
     margin-right: 20px;
@@ -620,14 +643,14 @@ header{
 }
 body{
 
-    background-color:rgb(199, 199, 199) ;
+    background-color:white ;
 
 }
 
 
 
 .ball2{
-  
+
   position: absolute;
   right:  0;
   left:  -5%;
@@ -667,13 +690,18 @@ section{
   width: 100%;
 }
 .cards2{
-  position: absolute; 
-  left: 20%;
-  top: 15%;
-  height: 58vh;
-  width: 70vh;
-
+padding-top: 2%;
+ width: 40%;
 }
+#contactp{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 7%;
+  padding-top: 4% ;
+  z-index: 800;
+}
+
 .souscard1 {
   margin-bottom:10vh ;
   margin-top:2vh ;
@@ -690,10 +718,8 @@ section{
 }
 
 .map1{
-  position: absolute;
-  margin-top: 6%;
-  margin-left: 55%;
-  
+
+
 }
 .map2{
   border: rgb(102, 168, 255) 3px  groove;
@@ -703,7 +729,7 @@ section{
   padding-right:0.7vh ;
   padding-left:0.7vh ;
   padding-bottom:0.2vh ;
-  
+
 }
 .mapgo{
   height: 50vh;
@@ -716,9 +742,9 @@ section{
   display: flex;
 }
 
-.infoloc h2{ 
+.infoloc h2{
   margin-left: 7%;
-  color: whitesmoke;
+  color: rgb(231, 231, 231);
 }
 
 .offcanvas-body ul li a{
@@ -735,176 +761,16 @@ section{
 
 
 
-
-/*silder start*/
-
-.slider {
-  position: relative;
-  width: 80%;
-  height: 100vh;
-  margin: 50px auto;
-
-  margin-left: 10%;
-}
-
-.slider-controls {
-  position: absolute;
-  bottom: 60%;
-  left: 7%;
-  width: 500px;
-  text-align: center;
-  transform: translatex(-50%);
-  z-index: 800;
-  list-style: none;
-  text-align: center;
-}
-
-.slider input[type="radio"] {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.slider-controls label {
-  display: inline-block;
-  border: none;
-  height: 20px;
-  width: 20px;
-  margin-left: 10px;
-  border-radius: 50%;
-  cursor: pointer;
-  background-color: #212121;
-  transition: background-color 0.2s linear;
-}
-
-#radio1:checked ~ .slider-controls label[for="radio1"] {
-  background-color: rgb(57, 107, 173);
-}
-
-#radio2:checked ~ .slider-controls label[for="radio2"] {
-  background-color: rgb(226, 116, 52);
-}
-
-#radio3:checked ~ .slider-controls label[for="radio3"] {
-  background-color: rgb(57, 107, 173);
-}
-
-
-/* SLIDES */
-
-.slides {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  height: 100%;
-}
-
-.slide {
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  width: 100%;
-  height: 100%;
-
-  opacity: 0;
-  transform: translatex(-100%);
-  transition: transform 250ms linear;
-}
-
-.slide-content {
-  width: 37%;
-}
-
-.slide-title {
-  margin-bottom: 20px;
-  font-size: 4vh;
-  color: rgb(57, 107, 173);
-}
-
-.slide-text {
-  margin-bottom: 20px;
-  font-size: 2.5vh;
-  text-align: justify;
-}
-
-.slide-link {
-  display: inline-block;
-  padding: 10px 20px;
-  color: #fff;
-  border-radius: 3px;
-  text-decoration: none;
-  background-color: rgb(57, 107, 173);
-}
-.slide-link:hover{
-  color: #fff;
-}
-
-.slide-image img {
-  position: absolute;
-  top: 0;
-  left: 35%;
-  right: 0;
-  bottom: 0;
-  margin-left: 30%;
-  height: 70%;
-}
-
-/* Slide animations */
-#radio1:checked ~ .slides .slide:nth-child(1) {
-  transform: translatex(0);
-  opacity: 1;
-}
-
-#radio2:checked ~ .slides .slide:nth-child(2) {
-  transform: translatex(0);
-  opacity: 1;
-}
-
-#radio3:checked ~ .slides .slide:nth-child(3) {
-  transform: translatex(0);
-  opacity: 1;
-}
-
-
-
-
-#radio1:not(:checked) ~ .slides .slide:nth-child(1) {
-  animation-name: swap-out;
-  animation-duration: 300ms;
-  animation-timing-function: linear;
-}
-
-#radio2:not(:checked) ~ .slides .slide:nth-child(2) {
-  animation-name: swap-out;
-  animation-duration: 300ms;
-  animation-timing-function: linear;
-}
-
-#radio3:not(:checked) ~ .slides .slide:nth-child(3) {
-  animation-name: swap-out;
-  animation-duration: 300ms;
-  animation-timing-function: linear;
-}
-/*slider end*/
 .mobileh{
   visibility: hidden;
 }
 @media(max-width:1600px){
   #header1 ul .nav-item a {
-    font-size: 15px;
+    font-size: 14px;
+    margin-left: 25px;
   }
-  .slide-image img {
-    top: 5%;
-    left: 25%;
-  }
-  
+
+
 }
 @media(max-width:1450px){
   #header1 ul .nav-item a {
@@ -915,34 +781,49 @@ section{
 @media(max-width:1400px){
   #header1 ul .nav-item a {
     font-size: 13px;
-    margin-left: 20px;
+    margin-left: 11px;
   }
-  .slide-image img {
-    top: 7%;
-    left: 10%;
-  }
+
 }
 @media(max-width:1300px){
   #header1 ul .nav-item a {
     font-size: 13px;
-    margin-left: 10px;
+    margin-left: 3px;
   }
-  .slide-image img {
-    top: 11%;
-    left: 10%;
+
+  .card4{
+    transform: scale(0.9);
   }
+
 }
-@media(max-width:1115px){
+@media(max-width:1250px){
   #header1{
     visibility:hidden;
   }
   #header2{
     visibility:visible;
   }
-  .slide-image img {
-    top: 13%;
-    left: 5%;
+  .card4{
+    transform: scale(0.85);
   }
+  .card {
+    height: auto;
+  }
+}
+@media(max-width:1225px){
+  .card4{
+    margin-bottom: 20%;
+    transform: scale(1.2);
+  }
+  .cards{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
+  }
+}
+@media(max-width:1180px){
+
+
   .ball3{
     top: 70%;}
   .slider-controls {
@@ -950,20 +831,21 @@ section{
     left: 10%;
 
   }
-  
+  .card4{
+    transform: scale(1.1);
+  }
+
 }
 @media(max-width:1050px){
 
-  .slide-image img {
-    top: 17%;
-    left: 0;
-  }
+
 }
 @media(max-width:900px){
-  .slide-image img {
-    top: 20%;
-    left: 0;
+
+  .card4{
+    transform: scale(1);
   }
+
 }
 
 @media(max-width:500px){

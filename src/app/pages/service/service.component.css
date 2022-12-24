@@ -1,4 +1,5 @@
 .home{
+  margin-top: 8vh;
     width: 100%;
     min-height: 100vh;
     background-image: url(/assets/img/bienv.jpg);
@@ -10,13 +11,16 @@
 }
 .c{
     height: 100vh;
-    background:linear-gradient(to top, rgb(57, 107, 173) 0%, transparent);
+    background:linear-gradient(to top, rgb(100, 153, 223) 0%, transparent);
+    text-align: center;
 }
 .container{
     padding-top: 40vh;
     color: beige;
+    text-align: center;
 }
 .container h1{
+  text-align: center;
     font-size: 3.25rem;
     font-weight: 700;
     line-height: 3.25rem;
@@ -25,6 +29,7 @@
     text-transform: uppercase !important;
 }
 .container h3{
+  text-align: center;
     font-size: 2.25rem;
     font-style: italic;
     line-height: 2.25rem;
@@ -40,7 +45,6 @@ button {
     padding: 1.3em 3em;
     font-size: 2.5vh;
     text-transform: uppercase;
-    letter-spacing: 2.5px;
     font-weight: 500;
     color: #000;
     background-color: #fff;
@@ -51,14 +55,14 @@ button {
     cursor: pointer;
     outline: none;
   }
-  
+
   button:hover {
     background-color: #e0732a;
     box-shadow: 0px 15px 20px rgba(52, 114, 155, 0.4);
     color: #fff;
     transform: translateY(-7px);
   }
-  
+
   button:active {
     transform: translateY(-1px);
   }
@@ -66,5 +70,6 @@ button {
   a{
     text-decoration: none;
     color: #000;
-    
+
+
   }

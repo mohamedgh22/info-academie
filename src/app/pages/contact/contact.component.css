@@ -1,0 +1,53 @@
+.card{
+  background-size: cover;
+  background-image: url("/assets/img/fclass.jpg");
+  width: 100%;
+  margin:0;
+
+}
+.backcard{
+  background-color: rgba(57, 107, 173, 0.356);
+}
+.titles{
+  text-align: center;
+  margin-top: 5%;
+  color: whitesmoke ;
+  font-family: 'Poppins', sans-serif;
+  font-size: 3em;
+  font-weight: 750;
+}
+@media(max-width:1230px){
+    #contactp {
+    flex-direction: column;
+
+}
+.cards2{
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.map1{
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+
+}
+.map2{
+  width: 100%;
+}
+.mapgo{
+  width: 100%;
+}
+}
+@media(max-width:670px){
+  .cards2{
+
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  .map1{
+    padding-left: 1%;
+    padding-right: 1%;
+
+  }
+}

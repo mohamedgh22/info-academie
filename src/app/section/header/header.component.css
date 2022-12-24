@@ -1,0 +1,16 @@
+.langue{
+  position: fixed;
+  border-radius: 20%;
+  cursor: pointer;
+  height: 7vh;
+  width: 7vh;
+  bottom: 3%;
+  right: 2%;
+  background-color: #252525;
+  z-index: 1000;
+}
+.langue img{
+  height: 5vh;
+  padding-top: 0.2vh;
+  padding-left: 0.2vh;
+}

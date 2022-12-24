@@ -1,0 +1,81 @@
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding:8% ;
+  padding-top: 4%;
+  align-content: center;
+  justify-content: space-between;
+  z-index: 800;
+}
+.titles{
+  text-align: center;
+  margin-top: 4%;
+  color: rgb(63, 63, 63) ;
+  font-family: 'Poppins', sans-serif;
+  font-size: 3em;
+  font-weight: 750;
+}
+.animation-to-right{
+  animation: move-right 2s ease-in ;
+  z-index: 0;
+}
+.animation-to-up{
+  animation: move-up2 2s ease-in ;
+  z-index: 0;
+}
+.animation-to-left{
+  animation: move-left 2s ease-in ;
+  z-index: 0;
+}
+@keyframes move-left {
+  From{
+    transform:translatex(100vh) ;
+    opacity: 0.1;
+  }
+  to {
+    transform: translatex(0vh);
+    opacity: 1;
+  }
+}
+@keyframes move-right {
+  From{
+    transform:translatex(-100vh) ;
+    opacity: 0.1;
+  }
+  to {
+    transform: translatex(0vh);
+    opacity: 1;
+  }
+}
+@keyframes move-up2 {
+  From{
+    transform:translateY(100vh) ;
+    opacity: 0.1;
+  }
+  to {
+    transform: translateY(0vh);
+    opacity: 1;
+  }
+}
+
+@media(max-width:1224px){
+  .circle3:nth-child(2) {
+
+    top: 50%;
+  }
+  .circle3:nth-child(1) {
+
+    top: 20%;
+  }
+
+  #c1{
+    animation: move-right 2s ease-in ;
+  }
+  #c2{
+    animation: move-left 2s ease-in ;
+  }
+  #c3{
+    animation: move-right 2s ease-in ;
+  }
+}

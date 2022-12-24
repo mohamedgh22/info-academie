@@ -1,26 +1,25 @@
 
-  
+
   <div class="modal fade" id="coursoutpopup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-dialog  modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">COURS DE SOUTIEN:</h5>
+          <h5 class="modal-title" id="exampleModalLabel">{{"COURS DE SOUTIEN" | translate}}</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-            <div class="img"></div>
             <ul>
-                 <li><span>professeur : </span> mohamed mohamed</li>
-                <li><span>nombre de heures : </span> 2 heures par scènes </li>
-                <li> <span>matières : </span>toutes les matières</li>
-                <li><span>les jours des scènes : </span> lundi, mardi jeudi et vendredi .</li>
-                <li><span>Prix : </span> 200DH</li>
-                <li><span>description : </span> cette formation va aidee bla bla bla blabla blabla blabla blabla blabla blabla bla</li>
+                 <li><span>{{"prof" | translate}} </span>: {{"profnom" | translate}}</li>
+                <li><span>{{"nbrheur" | translate}} </span>: {{"nbrheur2" | translate}} </li>
+                <li> <span>{{"matiere" | translate}} </span>:{{"qmatiere" | translate}}</li>
+                <li><span>{{"jrs" | translate}} </span>: {{"qjrs" | translate}}</li>
+                <li><span>{{"prix" | translate}} </span>: {{"qprix" | translate}}</li>
+                <li><span>{{"discription" | translate}} </span>: {{"qdiscription" | translate}}</li>
         </ul>
         </div>
         <div class="modal-footer">
             <a href="#offre">  <button class="cta"  >
-                <span>Voir plus d'offre</span>
+                <span>{{"vpo" | translate}}</span>
                 <svg viewBox="0 0 13 10" height="10px" width="15px">
                   <path d="M1,5 L11,5"></path>
                   <polyline points="8 1 12 5 8 9"></polyline>
@@ -33,51 +32,53 @@
 
   <!--/////////////////////////////////////////////////////////////////////////////////////// -->
 
-    
+
   <div class="modal fade" id="languepopup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-dialog  modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">COURS DES LANGUES:</h5>
+          <h5 class="modal-title" id="exampleModalLabel">{{"courlh"|translate}}</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
+        <div id="langpop" class="modal-body">
+          <div class="adenf">
             <div class="enfant">
-            <div class="img"></div>
-            <h4 class="titelh4langue">cours pour enfants entre <span>(6ans et 12ans)</span></h4>
-            <div class="langue"> 
+            <div class="img2"></div>
+            <h4 class="titelh4langue">{{"cenf" | translate}} <span>({{"ans" | translate}})</span></h4>
+            <div class="langue">
                 <div class="main_div">
-                    <button data-bs-toggle="modal" data-bs-target="#courlangfrenf">français</button>
-                    
+                    <button data-bs-toggle="modal" data-bs-target="#courlangfrenf">{{"fr" | translate}}</button>
+
                   </div>
-            
+
                   <div class="main_div">
-                    <button data-bs-toggle="modal" data-bs-target="#courlangengenf">anglais</button>
-                    
+                    <button data-bs-toggle="modal" data-bs-target="#courlangengenf">{{"eng" | translate}}</button>
+
                   </div>
                 </div>
             </div>
 
             <div class="adult">
                 <div class="img3"></div>
-                <h4 class="titelh4langue">cours pour adult</h4>
-            <div class="langue"> 
+                <h4 class="titelh4langue">{{"cad" | translate}}</h4>
+            <div class="langue">
                 <div class="main_div">
-                    <button data-bs-toggle="modal" data-bs-target="#courlangfradu">français</button>
-                    
+                    <button data-bs-toggle="modal" data-bs-target="#courlangfradu">{{"fr" | translate}}</button>
+
                   </div>
-            
+
                   <div class="main_div">
-                    <button data-bs-toggle="modal" data-bs-target="#courlangengadu">anglais</button>
-                    
+                    <button data-bs-toggle="modal" data-bs-target="#courlangengadu">{{"eng" | translate}}</button>
+
                   </div>
                 </div>
             </div>
+          </div>
 
         </div>
         <div class="modal-footer">
             <a href="#offre">   <button class="cta"  data-bs-dismiss="modal" aria-label="Close">
-                <span>Voir plus d'offre</span>
+                <span>{{"vpo" | translate}}</span>
                 <svg viewBox="0 0 13 10" height="10px" width="15px">
                   <path d="M1,5 L11,5"></path>
                   <polyline points="8 1 12 5 8 9"></polyline>
@@ -90,28 +91,28 @@
 
   <!--/////////////////////////////////////////////////////////////////////////////////////// -->
 
-    
+
   <div class="modal fade" id="activitepopup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-dialog  modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">ACTIVITE DE DIVERTISSEMENT:</h5>
+          <h5 class="modal-title" id="exampleModalLabel">{{"activh"|translate}}</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-            <div class="img2"></div>
             <ul>
-                 <li>centre info ACADEMIE academie offre des activites pour les anfents entre 6ans et 12ans</li>
-                <li><span>nombre de heures : </span> 2 heures par scènes </li>
-                <li><span>les jours des activites : </span> lundi, mardi jeudi et vendredi .</li>
-                <li><span>Prix : </span> 300DH</li>
-                <li><span>Les activites : </span> calcul mental .....</li>
-                <li><span>description : </span>  bla bla bla blabla blabla blabla blabla blabla blabla bla</li>
+                 <li>{{"d1" | translate}}</li>
+                 <li><span>{{"prof" | translate}} </span>: {{"profnom" | translate}}</li>
+                 <li><span>{{"nbrheur" | translate}} </span>: {{"nbrheur2" | translate}} </li>
+                 <li><span>{{"jrs" | translate}} </span>: {{"qjrs" | translate}}</li>
+                 <li><span>{{"prix" | translate}} </span>: {{"qprix" | translate}}</li>
+                 <li><span>{{"discription" | translate}} </span>: {{"qdiscription" | translate}}</li>
+
         </ul>
         </div>
         <div class="modal-footer">
             <a href="#offre"> <button class="cta"  data-bs-dismiss="modal" aria-label="Close">
-                <span>Voir plus d'offre</span>
+                <span>{{"vpo" | translate}}</span>
                 <svg viewBox="0 0 13 10" height="10px" width="15px">
                   <path d="M1,5 L11,5"></path>
                   <polyline points="8 1 12 5 8 9"></polyline>
@@ -124,25 +125,24 @@
 
   <!--/////////////////////////////////////////////////////////////////////////////////////// -->
   <div class="modal fade" id="courlangfrenf" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-dialog  modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">COURS DE SOUTIEN: <span>francais pour enfant(6ans a 16ans) </span> </h5>
+          <h5 class="modal-title" id="exampleModalLabel">{{"COURS DE SOUTIEN" | translate}} <br> <span>{{"frpenf" | translate}} </span> </h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-            <div class="img"></div>
             <ul>
-                 <li><span>professeur : </span> mohamed mohamed</li>
-                <li><span>nombre de heures : </span> 1 heures par scènes </li>
-                <li><span>les jours des scènes : </span> lundi, mardi jeudi et vendredi .</li>
-                <li><span>Prix : </span> 300DH</li>
-                <li><span>description : </span> cette formation va aidee bla bla bla blabla blabla blabla blabla blabla blabla bla</li>
+              <li><span>{{"prof" | translate}} </span>: {{"profnom" | translate}}</li>
+              <li><span>{{"nbrheur" | translate}} </span>: {{"nbrheur2" | translate}} </li>
+              <li><span>{{"jrs" | translate}} </span>: {{"qjrs" | translate}}</li>
+              <li><span>{{"prix" | translate}} </span>: {{"qprix" | translate}}</li>
+              <li><span>{{"discription" | translate}} </span>: {{"qdiscription" | translate}}</li>
         </ul>
         </div>
         <div class="modal-footer">
             <a href="#offre"> <button class="cta"  data-bs-dismiss="modal" aria-label="Close" >
-                <span>Voir plus d'offre</span>
+                <span>{{"vpo" | translate}}</span>
                 <svg viewBox="0 0 13 10" height="10px" width="15px">
                   <path d="M1,5 L11,5"></path>
                   <polyline points="8 1 12 5 8 9"></polyline>
@@ -154,25 +154,24 @@
   </div>
   <!--/////////////////////////////////////////////////////////////////////////////////////// -->
   <div class="modal fade" id="courlangengenf" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-dialog  modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">COURS DE SOUTIEN: <span>anglais pour enfant(6ans a 16ans)</span> </h5>
+          <h5 class="modal-title" id="exampleModalLabel">{{"COURS DE SOUTIEN" | translate}} <br> <span>{{"engpenf" | translate}}</span> </h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-            <div class="img"></div>
             <ul>
-                 <li><span>professeur : </span> mohamed mohamed</li>
-                <li><span>nombre de heures : </span> 1 heures par scènes </li>
-                <li><span>les jours des scènes : </span> lundi, mardi jeudi et vendredi .</li>
-                <li><span>Prix : </span> 300DH</li>
-                <li><span>description : </span> cette formation va aidee bla bla bla blabla blabla blabla blabla blabla blabla bla</li>
+              <li><span>{{"prof" | translate}} </span>: {{"profnom" | translate}}</li>
+              <li><span>{{"nbrheur" | translate}} </span>: {{"nbrheur2" | translate}} </li>
+              <li><span>{{"jrs" | translate}} </span>: {{"qjrs" | translate}}</li>
+              <li><span>{{"prix" | translate}} </span>: {{"qprix" | translate}}</li>
+              <li><span>{{"discription" | translate}} </span>: {{"qdiscription" | translate}}</li>
         </ul>
         </div>
         <div class="modal-footer">
             <a href="#offre"> <button class="cta"  data-bs-dismiss="modal" aria-label="Close">
-                <span>Voir plus d'offre</span>
+                <span>{{"vpo" | translate}}</span>
                 <svg viewBox="0 0 13 10" height="10px" width="15px">
                   <path d="M1,5 L11,5"></path>
                   <polyline points="8 1 12 5 8 9"></polyline>
@@ -185,25 +184,24 @@
 
     <!--/////////////////////////////////////////////////////////////////////////////////////// -->
     <div class="modal fade" id="courlangengadu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-dialog modal-dialog-scrollable">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">COURS DE SOUTIEN: <span>anglais pour adult</span> </h5>
+              <h5 class="modal-title" id="exampleModalLabel">{{"COURS DE SOUTIEN" | translate}} <br><span>{{"engpadu" | translate}}</span> </h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <div class="img3"></div>
                 <ul>
-                     <li><span>professeur : </span> mohamed mohamed</li>
-                    <li><span>nombre de heures : </span> 1 heures par scènes </li>
-                    <li><span>les jours des scènes : </span> lundi, mardi jeudi et vendredi .</li>
-                    <li><span>Prix : </span> 250DH</li>
-                    <li><span>description : </span> cette formation va aidee bla bla bla blabla blabla blabla blabla blabla blabla bla</li>
+                  <li><span>{{"prof" | translate}} </span>: {{"profnom" | translate}}</li>
+                  <li><span>{{"nbrheur" | translate}} </span>: {{"nbrheur2" | translate}} </li>
+                  <li><span>{{"jrs" | translate}} </span>: {{"qjrs" | translate}}</li>
+                  <li><span>{{"prix" | translate}} </span>: {{"qprix" | translate}}</li>
+                  <li><span>{{"discription" | translate}} </span>: {{"qdiscription" | translate}}</li>
             </ul>
             </div>
             <div class="modal-footer">
                 <a href="#offre"> <button class="cta"  data-bs-dismiss="modal" aria-label="Close">
-                    <span>Voir plus d'offre</span>
+                    <span>{{"vpo" | translate}}</span>
                     <svg viewBox="0 0 13 10" height="10px" width="15px">
                       <path d="M1,5 L11,5"></path>
                       <polyline points="8 1 12 5 8 9"></polyline>
@@ -216,25 +214,24 @@
 
       <!--/////////////////////////////////////////////////////////////////////////////////////// -->
     <div class="modal fade" id="courlangfradu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-dialog modal-dialog-scrollable">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">COURS DE SOUTIEN: <span>francais pour adult</span> </h5>
+              <h5 class="modal-title" id="exampleModalLabel">{{"COURS DE SOUTIEN" | translate}} <br><span>{{"frpadu" | translate}}</span> </h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <div class="img3"></div>
                 <ul>
-                     <li><span>professeur : </span> mohamed mohamed</li>
-                    <li><span>nombre de heures : </span> 1 heures par scènes </li>
-                    <li><span>les jours des scènes : </span> lundi, mardi jeudi et vendredi .</li>
-                    <li><span>Prix : </span> 300DH</li>
-                    <li><span>description : </span> cette formation va aidee bla bla bla blabla blabla blabla blabla blabla blabla bla</li>
+                  <li><span>{{"prof" | translate}} </span>: {{"profnom" | translate}}</li>
+                  <li><span>{{"nbrheur" | translate}} </span>: {{"nbrheur2" | translate}} </li>
+                  <li><span>{{"jrs" | translate}} </span>: {{"qjrs" | translate}}</li>
+                  <li><span>{{"prix" | translate}} </span>: {{"qprix" | translate}}</li>
+                  <li><span>{{"discription" | translate}} </span>: {{"qdiscription" | translate}}</li>
             </ul>
             </div>
             <div class="modal-footer">
                <a href="#offre"> <button class="cta"  data-bs-dismiss="modal" aria-label="Close">
-                <span>Voir plus d'offre</span>
+                <span>{{"vpo" | translate}}</span>
                     <svg viewBox="0 0 13 10" height="10px" width="15px">
                       <path d="M1,5 L11,5"></path>
                       <polyline points="8 1 12 5 8 9"></polyline>
@@ -244,3 +241,27 @@
           </div>
         </div>
       </div>
+
+            <!--/////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+            <button class="promotionpop" data-bs-toggle="modal" title="Promotion" data-bs-target="#promo">
+              <img src="/assets/img/promo.svg" alt="">
+
+            </button>
+            <div class="modal fade" id="promo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content" id="promocont">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">code promo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body" id="promobody">
+                         5XRTAZ
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                  </div>
+                </div>
+              </div>
+            </div>

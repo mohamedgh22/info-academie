@@ -1,27 +1,49 @@
-<div class="card">
-    <iframe class="video"src="https://www.youtube.com/embed/4CPINu68lL4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    
-<div class="boxes">
-    <div class="box2">
-        <div class="content">
-            <h1 >
-              QUI SOMMES NOUS :</h1>
-            <br>
-            <p >
-              Une formation basée sur une série d’activités intellectuelles et d’animations dédiées pour les enfants visant le développement de leurs compétences et capacités intellectuelles telles que l’assimilation sensorielle ( toucher, écoute, vision ), la concentration, la mémorisation, le reflex, l’aptitude à l’expression…            </p>
+<div class="card" id="offrep" >
+  <h1 class="titles" (appear)="addAnimationClass()">{{'À PROPOS DE NOUS' | translate}}</h1>
+  <div class="boxes">
+    <div class="box3 " id="box3">
 
-        </div>
-      </div>
-      <div class="box2">
-        <div class="content">
-            <h1 >
-              NOTRE BUT :</h1>
-            <br>
-            <p >
-              Une formation basée sur une série d’activités intellectuelles et d’animations dédiées pour les enfants visant le développement de leurs compétences et capacités intellectuelles telles que l’assimilation sensorielle ( toucher, écoute, vision ), la concentration, la mémorisation, le reflex, l’aptitude à l’expression…            </p>
 
-        </div>
+
+
+
+
+
+
+
+
+
+
+      <div class="content" >
+        <div id="p1" [ngClass]="{'p1': isCardVisible}">
+        <h1 >
+          {{"about1"|translate}}</h1>
+        <br>
+        <p >
+          {{"activites text"|translate}}           </p></div>
+          <div id="p2" [ngClass]="{'p2': isCardVisible}">
+
+          <h1 class="notrb">
+            {{"about2"|translate}}</h1>
+          <br>
+          <p >
+            {{"activites text"|translate}}       </p></div>
+
       </div>
     </div>
+    <iframe class="video"src="https://www.youtube.com/embed/4CPINu68lL4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
-  
+  <figure class="ball3">
+  </figure  >
+
+
+
+  </div>
+  <script>
+
+
+
+
+
+  </script>
+
